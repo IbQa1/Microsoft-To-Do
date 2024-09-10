@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.head{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    height: 2%;
+}
+
+#a-head{
+    color: rgb(33, 99, 199);
+}
+
+
+.main{
+    width: 100%;
+    height: 98%;
+    display: flex;
+}
+
+.account{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+#name-email{
+    display: flex;
+    flex-direction: column;
+}
+
+#circle{
+    background-color: #ff0097;
+    width: 20%;
+    height: 5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+
+.left-side-bar{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
+    padding: 0 10px;
+}
+
+.right-side{
+    width: 85%;
+    height: 100%;
+    background-image: url('Imagies/wallpaperflare.com_wallpaper\ \(22\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 0;
+}
+
+.left-side-bar div{
+    display: flex;
+    padding: 7px 0;
+}
+
+#My-Day:hover,#Important:hover,#Planned:hover,#Assigned-to-me:hover,#Tasks:hover{
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.left-side-bar a{
+    padding: 2px 10px;
+}
+
+
+#Search-bar{
+    padding: 5px 10px;
+    margin: 0 10px;
+    width: 100%;
+}
+
+#btn-search-1{
+    border: none;
+}
+
+#Search-bar input{
+    width: 80%;
+    height: 27px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px;
+    padding: 0 5px;
+    border: none;
+}
+
+#hr-line{
+    opacity: 0.5;
+}
+
+
+#My-Day-upper,#Impotant-upper,#Planned-upper,#Assigned-upper,#Tasks-upper{
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+
+#My-Day-upper a:hover,#Impotant-upper a:hover,#Planned-upper a:hover,#Assigned-upper a:hover,#Tasks-upper a:hover{
+    background-color:rgb(111, 111, 111);
+    border-radius: 2px;
+}
+
+
+#Search-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  
+}
+
+#Search-box input{
+    width: 80%;
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+}
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#a-search{
+    font-size: 30px;
+}
+
+
+#My-Day-content,#Important-content,#Planned-content,#Assigned-content,#Tasks-content{
+    
+    width: 97%;
+    height: 100%;
+    overflow-y: scroll; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+#Important-right,#Planned-right,#Assigned-right,#Tasks-right{
+    display: none;
+}
+
+#My-Day-right, #Important-right, #Planned-right, #Assigned-right, #Tasks-right {
+    height: calc(100vh - 150px); 
+    overflow-y: scroll;
+    
+}
+
+
+
+#Important-name,#Assigned-name,#Tasks-name,#Planned-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Important-name a,#Assigned-name a,#Tasks-name a,#Planned-name a{
+    padding: 10px;
+}
+
+
+#My-Day,#Important,#Planned,#Assigned-to-me,#Tasks{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar a{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+ }
+
+ #sidebar{
+    display: none;
+ }
+
+
+
+@media (min-width:801px) and (max-width:1320px){
+    
+    .main{
+        width: 100%;
+    }
+    
+    .right-side{
+        width: 80%;
+    }
+
+   .left-side-bar{
+    width: 20%;
+   }
+   #account{
+    font-size: 10px;
+   }
+
+   #Search-bar{
+    padding: 10px 1px;
+   }
+   
+} 
+
+
+
+
+@media (max-width:800px){
+    .left-side-bar{
+        display: none;
+        position: absolute;
+    }
+
+    .head{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+    }
+
+    #sidebar{
+        display: block;
+    }
+}

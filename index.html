@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Microsoft To Do</title>
+  </head>
+  <body>
+    <header class="head">
+      <a id="a-head"><i class="fa-solid fa-check"></i></a>
+      <span>Microsoft To Do</span>
+    </header>
+
+    <section class="main">
+      <div class="left-side-bar">
+        <div id="account">
+          <div id="circle">EQ</div>
+
+          <div id="name-email">
+            <h3>Ebraheem Qassem</h3>
+            <p>ebrahimqa99@gmail.com</p>
+          </div>
+
+        </div>
+        <div id="Search-bar">
+          <input type="text" placeholder="Search...?" />
+          <button id="btn-search-1" type="submit" aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div id="My-Day">
+          <div>
+            <a><i class="fa-solid fa-sun"></i></a>
+          <p id="p-My-Day">My Day</p>
+          </div>
+          
+
+          <div>
+            <p id="My-Day-count"></p>
+          </div>
+        </div>
+
+
+
+        <div id="Important">
+          <div>
+            <a><i class="fa-regular fa-star"></i></a>
+            <p id="p-Important">Important</p>
+          </div>
+
+          <div>
+            <p id="Important-count"></p>
+          </div>
+        </div>
+
+
+        
+        <div id="Planned">
+         <div>
+          <a><i class="fa-solid fa-table"></i></a>
+          <p id="p-Planned">Planned</p>
+         </div>
+
+          <div>
+            <p id="Planned-count"></p>
+          </div>
+         
+        </div>
+
+        <div id="Assigned-to-me">
+          <div>
+            <a id="a-Assigned-to-me"><i class="fa-regular fa-user"></i></a>
+            <p id="p-Assigned">Assigned-to-me</p>
+          </div>
+          
+          <div>
+            <p id="Assigned-count"></p>
+          </div>
+        </div>
+
+        <div id="Tasks">
+          <div>
+            <a ><i class="fa-solid fa-house"></i></a>
+            <p id="p-Tasks">Tasks</p>
+          </div>
+          
+          <div>
+            <p id="Tasks-count"></p>
+          </div>
+        </div>
+
+        <hr id="hr-line" />
+      </div>
+
+
+      <!--right side page-->
+      <div class="right-side">
+
+        <div id="sidebar">
+          <a><i class="fa-solid fa-sliders"></i></a>
+        </div>
+
+        <div id="My-Day-right">
+          <div id="My-Day-upper">
+            <div id="My-Day-name">
+              <h1 id="My-Day-title">My Day</h1>
+              <p id="p-date"></p>
+            </div>
+  
+            <div>
+              <a><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+  
+          <div id="My-Day-content">
+          </div>
+  
+        </div>
+       
+
+
+        <div id="Important-right">
+          <div id="Impotant-upper">
+            <div id="Important-name">
+              <a id="Important-a"><i class="fa-regular fa-star"></i></a>
+              <h1 id="Important-title">Important</h1>
+            </div>
+  
+            <div>
+              <a id="test"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+  
+          <div id="Important-content">
+            
+          </div>
+  
+        </div>
+   
+
+
+        <div id="Planned-right">
+          <div id="Planned-upper">
+            <div id="Planned-name">
+              <a id="planned-a"><i class="fa-solid fa-table"></i></a>
+              <h1 id="Planned-title">Planned</h1>
+            </div>
+  
+            <div>
+              <a><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+  
+          <div id="Planned-content">
+  
+          </div>
+        </div>
+     
+
+
+
+
+        <div id="Assigned-right">
+          <div id="Assigned-upper">
+            <div id="Assigned-name">
+              <a id="Assigned-a"><i class="fa-solid fa-person"></i></a>
+              <h1 id="Assigned-title">Assigned to me</h1>
+            </div>
+  
+            <div>
+              <a><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+  
+          <div id="Assigned-content">
+  
+          </div>
+        </div>
+      
+
+
+
+
+        <div id="Tasks-right">
+          <div id="Tasks-upper">
+            <div id="Tasks-name">
+              <a id="tasks-a"><i class="fa-solid fa-house"></i></a>
+              <h1 id="Tasks-title">Tasks</h1>
+            </div>
+  
+            <div>
+              <a><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+  
+          <div id="Tasks-content">
+  
+          </div>
+  
+        </div>
+      
+
+        
+
+        <div id="Search-box">
+          <input type="text" placeholder="Add a Task" id="task-value" />
+          <button type="submit" id="add">Add</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="code2.js"></script>
+  </body>
+</html>
